@@ -1,0 +1,28 @@
+# name: Create Pull Request
+
+# on:
+#   push:
+#     branches-ignore:
+#       - main
+
+# permissions:
+#   contents: read
+#   pull-requests: write
+
+# jobs:
+#   create-pr:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Create Pull Request
+#         env:
+#           GH_TOKEN: ${{ github.token }}
+#           BRANCH_NAME: ${{ github.ref_name }}
+#           REPOSITORY: ${{ github.repository }}
+#         run: |
+#           gh pr create \
+#             --repo "$REPOSITORY" \
+#             --base main \
+#             --head "$BRANCH_NAME" \
+#             --title "feat: $BRANCH_NAME" \
+#             --body "Automatically created pull request for \`$BRANCH_NAME\`."

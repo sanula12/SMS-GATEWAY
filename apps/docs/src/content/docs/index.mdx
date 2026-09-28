@@ -1,0 +1,40 @@
+---
+title: V SMS Documentation
+description: Send SMS at scale with the V SMS API.
+template: splash
+hero:
+  tagline: Simple, reliable SMS delivery for developers and businesses.
+  actions:
+    - text: Quick Start
+      link: /quickstart
+      icon: right-arrow
+      variant: primary
+    - text: API Reference
+      link: /reference/api
+      icon: document
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What you can do
+
+<CardGrid>
+  <Card title="Send SMS" icon="pencil">
+    Send single messages or bulk campaigns to thousands of recipients instantly.
+  </Card>
+  <Card title="Schedule Messages" icon="setting">
+    Set a future date and time for any message. Cancel anytime before it sends.
+  </Card>
+  <Card title="Excel Import" icon="document">
+    Upload a spreadsheet with per-row send dates and personalized message content.
+  </Card>
+  <Card title="Delivery Receipts" icon="approve-check">
+    Get real-time delivery status updates posted to your webhook endpoint.
+  </Card>
+  <Card title="Contact Management" icon="list-format">
+    Store phonebooks, create groups, and send campaigns to segmented audiences.
+  </Card>
+  <Card title="API Keys" icon="seti:lock">
+    Secure, scoped API keys so each integration only gets the access it needs.
+  </Card>
+</CardGrid>

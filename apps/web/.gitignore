@@ -1,0 +1,8 @@
+.next
+out
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+
+.exe

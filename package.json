@@ -1,0 +1,21 @@
+{
+  "name": "smsgate",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.9.3",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "dev:web": "turbo run dev --filter=web",
+    "dev:api": "turbo run dev --filter=api"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "turbo": "^2.0.0"
+  }
+}
